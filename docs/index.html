@@ -7,18 +7,30 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"/> <!-- 深色模式 -->
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      name: 'Unity3D 个人笔记', // 侧边栏的标题
+      repo: 'https://github.com/weikunou/UnityNotes', // github 仓库地址，右上角会显示
       loadSidebar: true,       // 使用自定义侧边栏
-      subMaxLevel: 2,          // 同时使用目录
+      subMaxLevel: 3,          // 同时使用目录
+      search: {
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '无',
+        depth: 3
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script> <!-- 复制代码 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-csharp.min.js"></script> <!-- 代码高亮 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script> <!-- 深色模式 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script> <!-- 搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script> <!-- 图片缩放 -->
 </body>
 </html>
